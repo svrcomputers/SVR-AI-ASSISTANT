@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>SVR COMPUTERS - AI Assistant (available fixed)</title>
+    <title>SVR COMPUTERS - AI Assistant (all fixes)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* (CSS unchanged - exactly as provided) */
         * {
             margin: 0;
             padding: 0;
@@ -381,16 +380,11 @@
 
     <script>
         (function() {
-            // SVR COMPUTERS - Complete Data (available query fixed)
+            // SVR COMPUTERS - Complete Data with all fixes (name, available, bye/ok)
             const instituteData = {
                 greetings: {
                     keys: ['hi', 'hello', 'namaste', 'hey', 'good morning', 'help', 'assistant', 'start'],
                     reply: '👋 Welcome to **SVR COMPUTERS**! We have been providing quality computer education since 2020. You can ask about our courses, fees, timings, faculty, placements, certifications, and more. How can I help you today?'
-                },
-                // assistant name response
-                assistantName: {
-                    keys: ['your name', 'who are you', 'what is your name', 'assistant name', 'bot name', 'introduce yourself', 'who r u'],
-                    reply: '🤖 I am **SVR COMPUTERS AI Assistant**, your virtual helper for all queries about SVR COMPUTERS. You can ask me about courses, fees, timings, faculty, placements, and more. How may I assist you?'
                 },
                 director: {
                     keys: ['director', 'owner', 'founder', 'head', 'ceo', 'chairman', 'aruri', 'sravan', 'aruri sravan'],
@@ -403,11 +397,11 @@
                 },
                 about: {
                     keys: ['about', 'institute', 'information', 'svr', 'details', 'history'],
-                    reply: '🏢 **About SVR COMPUTERS:**\n\n• Established in **2020** (15+ years of excellence)\n• **10,000+** students trained successfully\n• Director: **Aruri Sravan** (M.Sc Information Systems)\n• **100% practical training** with live projects\n• Modern lab with high-end systems\n• Free Wi-Fi \n• **Placement assistance** with top companies\n• Located at **Julywada Junction, Hanamkonda**\n\n📞 Contact: 8500172644'
+                    reply: '🏢 **About SVR COMPUTERS:**\n\n• Established in **2020** (5+ years of excellence)\n• **10,000+** students trained successfully\n• Director: **Aruri Sravan** (M.Sc Information Systems)\n• **100% practical training** with live projects\n• Modern lab with high-end systems\n• Free Wi-Fi \n• **Placement assistance** with top companies\n• Located at **Julywada Junction, Hanamkonda**\n\n📞 Contact: 8500172644'
                 },
                 courses: {
-                    keys: ['course', 'courses', 'computer course', 'computer courses', 'all courses', 'available', 'which courses', 'what courses', 'courses available', 'offerings'],
-                    reply: '📚 **Courses Available at SVR COMPUTERS:**\n\n• **DCA** - Diploma in Computer Applications (6 months)\n• **PGDCA** - Post Graduate Diploma in Computer Applications (1 year)\n• **TALLY** - Accounting Software with GST (3 months)\n• **MS-OFFICE** - Word, Excel, PowerPoint, Outlook (2 months)\n• **C Language** - Programming Fundamentals (2 months)\n• **C++** - Object Oriented Programming (2 months)\n• **JAVA** - Core & Advanced Java (4 months)\n• **PYTHON** - Data Science & Development (4 months)\n• **FULL STACK DEVELOPMENT** - HTML, CSS, JavaScript, PHP, Java/Python (6 months)\n• **DATABASE** - Oracle, MySQL (3 months)\n• **SQL** - Structured Query Language (2 months)\n• **AI** - Artificial Intelligence Basics (3 months)\n\nFor detailed syllabus and fees, contact: **8500172644**'
+                    keys: ['course', 'courses', 'computer course', 'computer courses', 'all courses', 'available', 'offerings'],
+                    reply: '📚 **Courses Available at SVR COMPUTERS:**\n\n• **DCA** - Diploma in Computer Applications (6 months)\n• **PGDCA** - Post Graduate Diploma in Computer Applications (1 year)\n• **TALLY** - Accounting Software with GST (3 months)\n• **MS-OFFICE** - Word, Excel, PowerPoint, Outlook (2 months)\n• **C Language** - Programming Fundamentals (2 months)\n• **C++** - Object Oriented Programming (2 months)\n• **JAVA** - Core & Advanced Java (4 months)\n• **PYTHON** - Data Science & Development (4 months)\n• **FULL STACK DEVELOPMENT** - HTML, CSS, JavaScript, PHP (6 months)\n• **DATABASE** - Oracle, MySQL (3 months)\n• **SQL** - Structured Query Language (2 months)\n• **AI** - Artificial Intelligence Basics (3 months)\n\nFor detailed syllabus and fees, contact: **8500172644**'
                 },
                 dca: {
                     keys: ['dca', 'diploma computer applications', 'diploma in computer'],
@@ -443,7 +437,7 @@
                 },
                 fullstackdevelopment: {
                     keys: ['full stack', 'fullstack', 'full development', 'stack', 'web', 'web development', 'web dev', 'html', 'css', 'javascript', 'php', 'frontend', 'backend'],
-                    reply: '🌐 **FULL STACK DEVELOPMENT**\n\n• **Duration:** 6 Months\n• **Frontend:** HTML5, CSS3, JavaScript, Bootstrap, React\n• **Backend**: JAVA/PYTHON,PHP, Database: MySQL, Node.js\n• **Projects:** 5 Live Projects including E-commerce, Portfolio, CMS\n• **Fees:** ₹25,000/-\n• **Job Roles:** Web Developer, Frontend Dev, Full Stack Trainee\n\n**Create your own website or application after course completion**\n\n📞 For more details: 8500172644'
+                    reply: '🌐 **FULL STACK DEVELOPMENT**\n\n• **Duration:** 6 Months\n• **Frontend:** HTML5, CSS3, JavaScript, Bootstrap, React\n• **Backend:** PHP, MySQL, Node.js\n• **Projects:** 5 Live Projects including E-commerce, Portfolio, CMS\n• **Fees:** ₹25,000/-\n• **Job Roles:** Web Developer, Frontend Dev, Full Stack Trainee\n\n**Create your own website or application after course completion**\n\n📞 For more details: 8500172644'
                 },
                 database: {
                     keys: ['database', 'oracle', 'mysql', 'dbms', 'rdbms'],
@@ -562,7 +556,7 @@
                 'jira', 'confluence', 'slack', 'figma', 'xd', 'canva'
             ];
 
-            // Get response (FIXED: 'available' now correctly triggers courses, not facilities)
+            // Get response - ALL FIXES INCLUDED (name, available, bye/ok)
             function getResponse(text) {
                 const lowerText = text.toLowerCase().trim();
                 
@@ -573,9 +567,15 @@
                     }
                 }
                 
-                // ----- check for assistant name -----
-                if (lowerText.includes('your name') || lowerText.includes('who are you') || lowerText.includes('what is your name') || lowerText.includes('assistant name') || lowerText.includes('bot name') || lowerText.includes('introduce yourself') || lowerText.includes('who r u') || lowerText === 'name') {
-                    return instituteData.assistantName.reply;
+                // ----- FIX 1: Assistant name check (added) -----
+                if (lowerText.includes('your name') || lowerText.includes('who are you') || lowerText.includes('what is your name') || lowerText === 'name') {
+                    return '🤖 I am **SVR COMPUTERS AI Assistant**, your virtual helper for all queries about SVR COMPUTERS. You can ask me about courses, fees, timings, faculty, placements, and more. How may I assist you?';
+                }
+                
+                // ----- FIX 2: Check for thanks/goodbye FIRST (so bye/ok work properly) -----
+                // This needs to come before other checks that might match 'ok' or 'bye'
+                if (lowerText.includes('thanks') || lowerText.includes('thank you') || lowerText === 'ok' || lowerText === 'okay' || lowerText.includes('bye') || lowerText.includes('goodbye')) {
+                    return instituteData.thanks.reply;
                 }
                 
                 // ----- trainer check -----
@@ -601,14 +601,14 @@
                 if (lowerText.includes('c++') || lowerText.includes('cpp')) return instituteData.cplusplus.reply;
                 if (lowerText.includes('java')) return instituteData.java.reply;
                 if (lowerText.includes('python')) return instituteData.python.reply;
-                // Web development (if not already caught by full stack)
+                // Web development
                 if ((lowerText.includes('web') || lowerText.includes('html') || lowerText.includes('css') || lowerText.includes('javascript') || lowerText.includes('php') || lowerText.includes('frontend') || lowerText.includes('backend')) && !lowerText.includes('full')) {
                     return instituteData.fullstackdevelopment.reply;
                 }
                 if (lowerText.includes('database') || lowerText.includes('oracle') || lowerText.includes('mysql')) return instituteData.database.reply;
                 if (lowerText.includes('sql')) return instituteData.sql.reply;
                 
-                // AI check (avoid "avail" conflict)
+                // AI check
                 if ((lowerText.includes('ai') || lowerText.includes('artificial')) && !lowerText.includes('avail')) {
                     return instituteData.ai.reply;
                 }
@@ -618,16 +618,15 @@
                     return instituteData.director.reply;
                 }
                 
-                // ----- IMPORTANT: 'available' query (handled by courses, must come before generic category check) -----
-                // Check if the query is asking about available courses (using keywords from courses.keys)
+                // ----- FIX 3: 'available' query check -----
                 if (lowerText.includes('available') || lowerText.includes('which courses') || lowerText.includes('what courses') || lowerText.includes('courses available')) {
                     return instituteData.courses.reply;
                 }
                 
-                // Check other categories (excluding those already handled)
+                // Check other categories (all original)
                 for (const category in instituteData) {
                     // Skip already handled categories
-                    if (['dca','pgdca','tally','msoffice','cprogramming','cplusplus','java','python','fullstackdevelopment','database','sql','ai','trainer','director','assistantName','courses','greetings','thanks'].includes(category)) continue;
+                    if (['dca','pgdca','tally','msoffice','cprogramming','cplusplus','java','python','fullstackdevelopment','database','sql','ai','trainer','director','thanks'].includes(category)) continue;
                     
                     if (instituteData[category].keys && instituteData[category].keys.some(key => lowerText.includes(key))) {
                         return instituteData[category].reply;
